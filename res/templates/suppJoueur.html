@@ -1,0 +1,26 @@
+<%inherit file="template.html"/>
+
+<h2>Supprimer un joueur :</h2>
+
+
+<div class="container1">
+    <div class="suppJou">
+        <form action="suppressById" method="POST">
+
+            
+            ${message}
+
+        <br>    
+        <br>
+        <br>    
+        <br>
+            <label for="nJoueur">Numéro du joueur :</label>
+        <br>
+        <br>
+            <input type="number" id="nJoueur" placeholder="" name="nJoueur" required>
+        <br>
+        <br>
+            <input type="submit" value="Supprimer" class="btn-supp">
+        </form>
+    </div>
+</div>

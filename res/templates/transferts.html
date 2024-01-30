@@ -1,0 +1,27 @@
+<%inherit file="template.html"/>
+
+<h2>Affichage des transferts :</h2>
+
+<div class="Affichage">
+    <table>
+        <tr>
+            <th>Nom du Joueur</th>
+            <th>Prénom du Joueur</th>
+            <th>Numéro du Joueur</th>
+            <th>Montant du transfert</th>
+            <th>Acheteur</th>
+            <th>Date</th>
+            
+        </tr>
+        % for transfert in mesTr:
+        <tr>
+            <td style="padding: 10px;">${transfert[0]}</td>
+            <td style="padding: 10px;">${transfert[1]}</td>
+            <td style="padding: 10px;">${transfert[2]}</td>
+            <td style="padding: 10px;">${transfert[3]}</td>
+            <td style="padding: 10px;">${transfert[4]}</td>
+            <td style="padding: 10px;">${transfert[5]}</td>
+        </tr>
+        % endfor
+    </table>
+</div>

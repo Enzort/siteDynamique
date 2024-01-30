@@ -1,0 +1,26 @@
+<%inherit file="template.html"/>
+
+<h2>Affichage des clubs par date de création :</h2>
+
+<div class="Affichage">
+    <table>
+        <tr>
+            <th>Numéro du club</th>
+            <th>Nom du club</th>
+            <th>Ville</th>
+            <th>Budget</th>
+            <th>Stade</th>
+            <th>Date de création</th>
+        </tr>
+        % for club in mesClu:
+        <tr>
+            <td style="padding: 10px;">${club[0]}</td>
+            <td style="padding: 10px;">${club[1]}</td>
+            <td style="padding: 10px;">${club[2]}</td>
+            <td style="padding: 10px;">${club[3]}</td>
+            <td style="padding: 10px;">${club[4]}</td>
+            <td style="padding: 10px;">${club[5]}</td>
+        </tr>
+        % endfor
+    </table>
+</div>

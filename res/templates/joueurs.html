@@ -1,0 +1,35 @@
+<%inherit file="template.html"/>
+
+<h2>Affichage des joueurs :</h2>
+<div class="Affichage">
+    <table>
+        <tr>
+            <th>Numéro du Joueur</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Date de naissance</th>
+            <th>Nationalité</th>
+            <th>Poste</th>
+            <th>Numéro de club</th>
+            <th>Salaire annuel</th>
+            <th>Taille en cm</th>
+            <th>Poids en kg</th>
+            <th>Sprint sur 40 yards en s</th>
+        </tr>
+        % for joueur in mesJou:
+        <tr>
+            <td style="padding: 10px;">${joueur[0]}</td>
+            <td style="padding: 10px;">${joueur[1]}</td>
+            <td style="padding: 10px;">${joueur[2]}</td>
+            <td style="padding: 10px;">${joueur[3]}</td>
+            <td style="padding: 10px;">${joueur[4]}</td>
+            <td style="padding: 10px;">${joueur[5]}</td>
+            <td style="padding: 10px;">${joueur[6]}</td>
+            <td style="padding: 10px;">${joueur[7]}</td>
+            <td style="padding: 10px;">${joueur[8]}</td>
+            <td style="padding: 10px;">${joueur[9]}</td>
+            <td style="padding: 10px;">${joueur[10]}</td>
+        </tr>
+        % endfor
+    </table>
+</div>

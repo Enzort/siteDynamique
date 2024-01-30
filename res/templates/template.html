@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Football Américain</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"    >
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="../css/sae.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <a>Football Américain</a>
+            <div class="nav-links">
+                <ul>
+                    <li class="active"><a href="index">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Joueurs</a>
+                        <div class="dropdown-content">
+                            <a href="affJou">Liste des joueurs</a>
+                            <a href="affJouAge">Liste des joueurs par âge</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Clubs</a>
+                        <div class="dropdown-content">
+                            <a href="affClub">Liste des clubs</a>
+                            <a href="affClubBudget">Liste des clubs par budget</a>
+                            <a href="affClubCrea">Liste des clubs par date de création</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Transferts</a>
+                        <div class="dropdown-content">
+                            <a href="insertTransfert">Proposer un transferts</a>
+                            <a href="affTransf">Voir les transferts</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Formulaires</a>
+                        <div class="dropdown-content">
+                            <a href="insertJoueur">Insérer d'un joueur</a>
+                            <a href="suppressById">Supprimer un joueur</a>
+                            <a href="ModifierJoueur">Modifier un joueur</a>
+                        </div>
+                    </li>
+                </ul>       
+            </div>
+            <img class="menuH" src="../media/menuH.jpg" alt="">       
+        </nav>
+
+        ${ self.body() }
+
+        <script>
+
+            const menuHamburger = document.querySelector(".menuH")
+            const navLinks = document.querySelector(".nav-links")
+         
+            menuHamburger.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu')
+            })
+        
+        </script>
+
+    </body>
+</html>

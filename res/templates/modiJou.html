@@ -1,0 +1,129 @@
+<%inherit file="template.html"/>
+
+<h2>Modifier un joueur</h2>
+
+
+<div class="container">
+    <div class="ajoutT1">
+        <form action="ModifierJoueur" method="POST">
+            
+            ${message}
+
+        <br>    
+        <br>
+        <br>    
+        <br>
+            <label for="num">Numéro du joueur :</label>
+        <br>
+        <br>
+            <input type="number" id="num" placeholder="" name="num" required>
+        <br>
+        <br>
+
+            <label for="nomJoueurs">Nom :</label>
+        <br>    
+        <br>
+            <input type="text" id="nom" placeholder="Nom du Joueur" name="nom" required>
+        <br>
+        <br>
+            <label for="prenomJoueurs">Prénom :</label>
+        <br>
+        <br>
+            <input type="text" id="prenom" placeholder="Prénom du joueur" name="prenom" required>
+        <br>
+        <br>
+            <label for="dateNaiss">Date de naissance :</label>
+        <br>
+        <br>    
+            <input type="date" id="naiss" placeholder="Format AAAA-MM-JJ" name="naiss" required>
+        <br>
+        <br>
+            <label for="nationalite">Nationalité :</label>
+        <br>
+        <br>    
+            <input type="text" id="nationalite" placeholder="Nationalité du joueur" name="nationalite" required>
+        <br>
+        <br>
+            <label for="poste">Poste :</label>
+        <br>
+        <br>
+            <label for="poste">QB</label>
+            <input type="radio" id="poste" name="poste" value="QB" required>
+
+            <label for="poste">WR</label>
+            <input type="radio" id="poste" name="poste" value="WR" required>
+
+            <label for="poste">OL</label>
+            <input type="radio" id="poste" name="poste" value="OL" required>
+        
+            <label for="poste">DL</label>
+            <input type="radio" id="poste" name="poste" value="DL" required>
+
+            <label for="poste">RB</label>
+            <input type="radio" id="poste" name="poste" value="RB" required>
+
+            <label for="poste">FB</label>
+            <input type="radio" id="poste" name="poste" value="FB" required>
+
+            <label for="poste">TE</label>
+            <input type="radio" id="poste" name="poste" value="TE" required>
+
+            <label for="poste">LB</label>
+            <input type="radio" id="poste" name="poste" value="LB" required>
+
+            <label for="poste">CB</label>
+            <input type="radio" id="poste" name="poste" value="CB" required>
+
+            <label for="poste">S</label>
+            <input type="radio" id="poste" name="poste" value="S" required>
+
+            <label for="poste">K</label>
+            <input type="radio" id="poste" name="poste" value="K" required>
+
+            <label for="poste">P</label>
+            <input type="radio" id="poste" name="poste" value="P" required>
+
+            <label for="poste">KR</label>
+            <input type="radio" id="poste" name="poste" value="KR" required>
+
+            <label for="poste">PR</label>
+            <input type="radio" id="poste" name="poste" value="PR" required>
+
+            <label for="poste">SP</label>
+            <input type="radio" id="poste" name="poste" value="SP" required>
+        <br>
+        <br>
+            <label for="nClub">Numéro du club :</label>
+        <br>
+        <br>
+            <input type="number" id="club" placeholder="" name="club" required>
+        <br>
+        <br>
+            <label for="salaire">Salaire annuel :</label>
+        <br>
+        <br>    
+            <input type="number" id="salaire" placeholder="" name="salaire" required>
+        <br>
+        <br>
+            <label for="taille">Taille :</label>
+        <br>
+        <br>
+            <input type="number" id="taille" placeholder="En centimètres" name="taille" step="any" inputmode="decimal" required>
+        <br>
+        <br>
+            <label for="poids">Poids :</label>
+        <br>
+        <br>
+            <input type="number" id="poids" placeholder="En kilogrammes" name="poids" step="any" inputmode="decimal" required>
+        <br>
+        <br>
+            <label for="sprint40y">Sprint sur 40 yards :</label>
+        <br>
+        <br>
+            <input type="number" id="sprint" placeholder="En secondes" name="sprint" step="any" inputmode="decimal" required>
+        <br>
+        <br>
+            <input type="submit" value="Insérer" class="btn-insérer">
+    </form>
+    </div>
+</div>

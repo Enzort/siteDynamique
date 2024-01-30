@@ -1,0 +1,42 @@
+<%inherit file="template.html"/>
+
+<h2>Insertion d'un transfert :</h2>
+
+<div class="container1">
+    <div class="ajoutT1">
+        <form action="insertTransferts" method="POST">
+
+            ${message}
+
+        <br>    
+        <br>
+        <br>    
+        <br>
+            <label for="nJou">Numéro du joueur :</label>
+        <br>    
+        <br>
+            <input type="number" id="nJou" placeholder="" name="nJou" required>
+        <br>
+        <br>
+            <label for="Mont">Montant du transfert :</label>
+        <br>
+        <br>    
+            <input type="number" id="Mont" placeholder="Montant" name="Mont" required>
+        <br>
+        <br>
+            <label for="date">Date :</label>
+        <br>
+        <br>    
+            <input type="date" id="date" placeholder="" name="date" required>
+        <br>
+        <br>
+            <label for="Achet">Acheteur :</label>
+        <br>
+        <br>    
+            <input type="text" id="Achet" placeholder="Nom du club Acheteur" name="Achet" required>
+        <br>
+        <br>
+            <input type="submit" value="Insérer" class="btn-insérer">
+        </form>
+    </div>
+</div>
